@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dessert Shop</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo"><img src="./images/bowl-of-ice-cream-with-chocolate.webp" alt="ice" class="lg"> Divine Desserts &nbsp;<span class="social-icons" style="font-size: medium;">
+              <a style="color: pink;" href="#"><i class="fab fa-facebook-f"></i></a>&nbsp;
+              <a style="color: pink;" href="#"><i class="fab fa-twitter"></i></a>&nbsp;
+              <a style="color: pink;" href="#"><i class="fab fa-instagram"></i></a>
+            </span></div>
+            
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#cart">Cart</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            
+        </nav>
+    </header>
+    <div class="bg">
+    <div class="sec faded-left">
+        <h1 class="heading">Indulge in Sweet Delights: <br> Explore Our Irresistible Dessert Creations! 
+            <span><p class="caption">Made with love and passion! <br> <br><button class="menu">Menu</button> <button class="readm">Read More</button></p></span> </h1>
+    </div></div>
+    <h2>&nbsp;&nbsp;Top Selling Desserts</h2>
+    
+    <div class="slider">
+        <div class="item" style="background-image: url('./images/foodiesfeed.com_blueberry-cheesecake-with-poppyseed.jpg'); background-position: 45%;">
+            <h4>Blueberry Cheesecake</h4>
+        </div>
+        <div class="item" style="background-image: url('./images/chocolate-caramel-cheesecake-with-coffee.webp'); background-position: 55%;">
+            <h4>Caramel Cheesecake</h4>
+        </div>
+        <div class="item" style="background-image: url('./images/girl-eating-chocolate-waffle-for-breakfast-in-a-tropical-coffeeshop.webp'); background-position: 55%;">
+            <h4>Chocolate Waffle</h4>
+        </div>
+        <div class="item" style="background-image: url('./images/baklava-macro.webp'); background-position: 55%;">
+          <h4>Baklava Macro</h4>
+      </div>
+        <div class="item" style="background-image: url('./images/pancakes-with-hot-caramel-and-ice-cream-1.webp'); background-position: 55%;">
+            <h4>Pancake with hot Caramel</h4>
+        </div>
+        <div class="item" style="background-image: url('./images/salted-caramel-dessert-with-coffee.webp'); background-position: 75%;">
+            <h4>Salted Caramel Dessert</h4>
+        </div>
+        <div class="item" style="background-image: url('./images/girl-eating-matcha-pancakes-with-tropical-fruit.webp'); background-position: 55%;">
+            <h4>Matcha Pancake</h4>
+        </div>
+
+        <button id="next">></button>
+        <button id="prev"><</button>
+    </div>
+    <h2>&nbsp;&nbsp;Dessert Menu</h2>
+  <div id="options">
+    <button onclick="filterDesserts('all')">All</button>
+    <button onclick="filterDesserts('indian')">Indian</button>
+    <button onclick="filterDesserts('classic')">Classics</button>
+    <button onclick="filterDesserts('special')">Special</button>
+    <button onclick="filterDesserts('beverages')">Beverages</button>
+  </div>
+  <section id="menu">
+  <div class="menu-container">
+    <div class="menu-card classic">
+      <img src="./images/baklava-macro.webp" alt="christmas cake"><div class="img-box-overlay">
+        <i class="far fa-heart heart-icon"></i>
+        <i class="fas fa-shopping-cart cart-icon"></i>
+        <i class="fas fa-share share-icon"></i>
+      </div>
+      <h3>Baklava Macro</h3>
+      <h4>Price: $25</h4>
+    </div>
+    <div class="menu-card classic">
+      <img src="./images/cherry-pie.webp" alt="Cherry Pie"><div class="img-box-overlay">
+        <i class="far fa-heart heart-icon"></i>
+        <i class="fas fa-shopping-cart cart-icon"></i>
+        <i class="fas fa-share share-icon"></i>
+      </div>
+      <h3>Cherry Pie</h3>
+      <h4>Price: $10</h4>
+    </div>
+    <div class="menu-card indian">
+      <img src="./images/badam kulfi.jpg" alt="Cherry Pie"><div class="img-box-overlay">
+        <i class="far fa-heart heart-icon"></i>
+        <i class="fas fa-shopping-cart cart-icon"></i>
+        <i class="fas fa-share share-icon"></i>
+      </div>
+      <h3>Badam Kulfi</h3>
+      <h4>Price: $8</h4>
+    </div>
+    <div class="menu-card indian">
+      <img src="./images/laddu.avif" alt="Cherry Pie"><div class="img-box-overlay">
+        <i class="far fa-heart heart-icon"></i>
+        <i class="fas fa-shopping-cart cart-icon"></i>
+        <i class="fas fa-share share-icon"></i>
+      </div>
+      <h3>Laddu</h3>
+      <h4>Price: $7</h4>
+    </div>
+    <div class="menu-card classic">
+      <img src="./images/foodiesfeed.com_blueberry-cheesecake-with-poppyseed.jpg" alt="christmas cake"><div class="img-box-overlay">
+        <i class="far fa-heart heart-icon"></i>
+        <i class="fas fa-shopping-cart cart-icon"></i>
+        <i class="fas fa-share share-icon"></i>
+      </div>
+      <h3>Blueberry Cheesecake</h3>
+      <h4>Price: $12</h4>
+    </div>
+    <div class="menu-card classic">
+      <img src="./images/salmon-canapes.webp" alt="christmas cake"><div class="img-box-overlay">
+        <i class="far fa-heart heart-icon"></i>
+        <i class="fas fa-shopping-cart cart-icon"></i>
+        <i class="fas fa-share share-icon"></i>
+      </div>
+      <h3>Salmon Canapes</h3>
+      <h4>Price: $11</h4>
+    </div>
+    
+    <div class="menu-card classic">
+      <img src="./images/yeast-cake-with-fruit.webp" alt="christmas cake"><div class="img-box-overlay">
+        <i class="far fa-heart heart-icon"></i>
+        <i class="fas fa-shopping-cart cart-icon"></i>
+        <i class="fas fa-share share-icon"></i>
+      </div>
+      <h3>Yeast Cake</h3>
+      <h4>Price: $20</h4>
+    </div>
+    <div class="menu-card classic">
+      <img src="./images/ice-cream-sundae.webp" alt="christmas cake">
+      <div class="img-box-overlay">
+        <i class="far fa-heart heart-icon"></i>
+        <i class="fas fa-shopping-cart cart-icon"></i>
+        <i class="fas fa-share share-icon"></i>
+      </div>
+      <h3>Icecream Sundae</h3>
+      <h4>Price: $7</h4>
+    </div>
+    <div class="menu-card indian">
+      <img src="./images/fresh-jalebi-818316_1280.jpg" alt="christmas cake">
+      <div class="img-box-overlay">
+        <i class="far fa-heart heart-icon"></i>
+        <i class="fas fa-shopping-cart cart-icon"></i>
+        <i class="fas fa-share share-icon"></i>
+      </div>
+      <h3>Jalebi</h3>
+      <h4>Price: $12</h4>
+    </div>
+    <div class="menu-card indian">
+      <img src="./images/rasagulla.jpg" alt="Cherry Pie">
+      <div class="img-box-overlay">
+        <i class="far fa-heart heart-icon"></i>
+        <i class="fas fa-shopping-cart cart-icon"></i>
+        <i class="fas fa-share share-icon"></i>
+      </div>
+      <h3>Rasagulla</h3>
+      <h4>Price: $8</h4>
+    </div>
+    <div class="menu-card special">
+        <img src="./images/chocolate-caramel-cheesecake-with-coffee.webp" alt="christmas cake">
+        <div class="img-box-overlay">
+          <i class="far fa-heart heart-icon"></i>
+          <i class="fas fa-shopping-cart cart-icon"></i>
+          <i class="fas fa-share share-icon"></i>
+        </div>
+        <h3>Caramel Cheesecake</h3>
+        <h4>Price: $15</h4>
+      </div>
+      <div class="menu-card special">
+        <img src="./images/girl-eating-chocolate-waffle-for-breakfast-in-a-tropical-coffeeshop.webp" alt="christmas cake">
+        <div class="img-box-overlay">
+          <i class="far fa-heart heart-icon"></i>
+          <i class="fas fa-shopping-cart cart-icon"></i>
+          <i class="fas fa-share share-icon"></i>
+        </div>
+        <h3>Chocolate Waffle</h3>
+        <h4>Price: $11</h4>
+      </div>
+      <div class="menu-card special">
+        <img src="./images/pancakes-with-hot-caramel-and-ice-cream-1.webp" alt="christmas cake">
+        <div class="img-box-overlay">
+          <i class="far fa-heart heart-icon"></i>
+          <i class="fas fa-shopping-cart cart-icon"></i>
+          <i class="fas fa-share share-icon"></i>
+        </div>
+        <h3>Pancake</h3>
+        <h4>Price: $14</h4>
+      </div>
+      <div class="menu-card special">
+        <img src="./images/salted-caramel-dessert-with-coffee.webp" alt="christmas cake">
+        <div class="img-box-overlay">
+          <i class="far fa-heart heart-icon"></i>
+          <i class="fas fa-shopping-cart cart-icon"></i>
+          <i class="fas fa-share share-icon"></i>
+        </div>
+        <h3>Salted Caramel</h3>
+        <h4>Price: $17</h4>
+      </div>
+      <div class="menu-card special">
+        <img src="./images/girl-eating-matcha-pancakes-with-tropical-fruit.webp" alt="christmas cake">
+        <div class="img-box-overlay">
+          <i class="far fa-heart heart-icon"></i>
+          <i class="fas fa-shopping-cart cart-icon"></i>
+          <i class="fas fa-share share-icon"></i>
+        </div>
+        <h3>Matcha Pancake</h3>
+        <h4>Price: $13</h4>
+      </div>
+    <div class="menu-card special">
+        <img src="./images/christmas-cake.webp" alt="christmas cake">
+        <div class="img-box-overlay">
+          <i class="far fa-heart heart-icon"></i>
+          <i class="fas fa-shopping-cart cart-icon"></i>
+          <i class="fas fa-share share-icon"></i>
+        </div>
+        <h3>Christmas Cake</h3>
+        <h4>Price: $14</h4>
+      </div>
+    <div class="menu-card beverages">
+        <img src="./images/hot-chocolate.webp" alt="hot-chocolate">
+        <div class="img-box-overlay">
+          <i class="far fa-heart heart-icon"></i>
+          <i class="fas fa-shopping-cart cart-icon"></i>
+          <i class="fas fa-share share-icon"></i>
+        </div>
+        <h3>Hot Chocolate</h3>
+        <h4>Price: $9</h4>
+      </div>
+      <div class="menu-card beverages">
+        <img src="./images/coffee-reading.webp" alt="hot-chocolate">
+        <div class="img-box-overlay">
+          <i class="far fa-heart heart-icon"></i>
+          <i class="fas fa-shopping-cart cart-icon"></i>
+          <i class="fas fa-share share-icon"></i>
+        </div>
+        <h3>Coffee</h3>
+        <h4>Price: $5</h4>
+      </div>
+      <div class="menu-card beverages">
+        <img src="./images/berries-mango-smoothie.webp" alt="hot-chocolate">
+        <div class="img-box-overlay">
+          <i class="far fa-heart heart-icon"></i>
+          <i class="fas fa-shopping-cart cart-icon"></i>
+          <i class="fas fa-share share-icon"></i>
+        </div>
+        <h3>Mango Smoothie</h3>
+        <h4>Price: $6</h4>
+      </div>
+      <div class="menu-card indian">
+        <img src="./images/flaky-poli-5463050_1280.jpg" alt="christmas cake">
+        <div class="img-box-overlay">
+          <i class="far fa-heart heart-icon"></i>
+          <i class="fas fa-shopping-cart cart-icon"></i>
+          <i class="fas fa-share share-icon"></i>
+        </div>
+        <h3>Flaky Poli</h3>
+        <h4>Price: $12</h4>
+      </div>
+      <div class="menu-card indian">
+        <img src="./images/tiramisu.webp" alt="christmas cake">
+        <div class="img-box-overlay">
+          <i class="far fa-heart heart-icon"></i>
+          <i class="fas fa-shopping-cart cart-icon"></i>
+          <i class="fas fa-share share-icon"></i>
+        </div>
+        <h3>Tiramisu</h3>
+        <h4>Price: $11</h4>
+      </div>
+      <div class="menu-card indian">
+        <img src="./images/exotic-coconut-rice-and-beans-dessert-with-mango-2.webp" alt="christmas cake">
+        <div class="img-box-overlay">
+          <i class="far fa-heart heart-icon"></i>
+          <i class="fas fa-shopping-cart cart-icon"></i>
+          <i class="fas fa-share share-icon"></i>
+        </div>
+        <h3>Coconut beans Kheer</h3>
+        <h4>Price: $15</h4>
+      </div>
+      <div class="menu-card beverages">
+        <img src="./images/pouring-sparkling-wine.webp" alt="hot-chocolate">
+        <div class="img-box-overlay">
+          <i class="far fa-heart heart-icon"></i>
+          <i class="fas fa-shopping-cart cart-icon"></i>
+          <i class="fas fa-share share-icon"></i>
+        </div>
+        <h3>Wine</h3>
+        <h4>Price: $12</h4>
+      </div>
+      <div class="menu-card beverages">
+        <img src="./images/glass-of-ice-tea.webp" alt="hot-chocolate">
+        <div class="img-box-overlay">
+          <i class="far fa-heart heart-icon"></i>
+          <i class="fas fa-shopping-cart cart-icon"></i>
+          <i class="fas fa-share share-icon"></i>
+        </div>
+        <h3>Ice Tea</h3>
+        <h4>Price: $4</h4>
+      </div>
+      <div class="menu-card beverages">
+        <img src="./images/sparkling-water-with-lime.webp" alt="hot-chocolate">
+        <div class="img-box-overlay">
+          <i class="far fa-heart heart-icon"></i>
+          <i class="fas fa-shopping-cart cart-icon"></i>
+          <i class="fas fa-share share-icon"></i>
+        </div>
+        <h3>Lime Drink</h3>
+        <h4>Price: $3</h4>
+      </div>
+      <div class="menu-card indian">
+        <img src="./images/Gajar ka Halwa1.jpg" alt="hot-chocolate">
+        <div class="img-box-overlay">
+          <i class="far fa-heart heart-icon"></i>
+          <i class="fas fa-shopping-cart cart-icon"></i>
+          <i class="fas fa-share share-icon"></i>
+        </div>
+        <h3>Gajar ka Halwa</h3>
+        <h4>Price: $4</h4>
+      </div>
+      <div class="menu-card indian">
+        <img src="./images/gulab jamun.jpg" alt="hot-chocolate">
+        <div class="img-box-overlay">
+          <i class="far fa-heart heart-icon"></i>
+          <i class="fas fa-shopping-cart cart-icon"></i>
+          <i class="fas fa-share share-icon"></i>
+        </div>
+        <h3>Gulab Jamun</h3>
+        <h4>Price: $5</h4>
+      </div>
+      <div class="menu-card special">
+        <img src="./images/cake-with-macarons-on-top.webp" alt="hot-chocolate">
+        <div class="img-box-overlay">
+          <i class="far fa-heart heart-icon"></i>
+          <i class="fas fa-shopping-cart cart-icon"></i>
+          <i class="fas fa-share share-icon"></i>
+        </div>
+        <h3>Macaroon Cake</h3>
+        <h4>Price: $20</h4>
+      </div>
+  </div>
+</section>
+<h2>&nbsp;&nbsp;Shopping Cart</h2>
+<div id="cart">
+  
+  <table id="cart-table">
+    <thead>
+      <tr>
+        <th style="width: 40%;">Product</th>
+        <th style="width: 40%;">Price</th>
+        <th style="background-color: #fff0f500; width: 20%;"></th>
+      </tr>
+    </thead>
+    <tbody id="cart-items">
+    </tbody>
+    <tfoot>
+      <tr>
+        <td style="text-align: center; font-weight: bold;">Total:</td>
+        <td id="cart-total"></td>
+        <td></td>
+      </tr>
+    </tfoot>
+  </table>
+  <div id="cart-total"></div>
+  <button id="checkout-btn">Checkout</button>
+</div>
+<br>
+<footer>
+  &copy; 2024 Divine Desserts. All rights reserved.
+</footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
